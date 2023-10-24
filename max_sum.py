@@ -14,7 +14,7 @@ def find_max(grid, n): #assuming nxn grid
     #Iterate through rows 1->n-1
     #First compute L and R for the given row using the following recurrenes
     #L[i][j] = max(A[i-1][j], L[i][j-1]) + grid[i][j]
-    #L[i][j] = max(A[i-1][j], L[i][j-1]) + grid[i][j]      
+    #R[i][j] = max(A[i-1][j], R[i][j+1]) + grid[i][j]      
     #Then compute A using the following recurrence
     #A[i][j] = max(A[i-1][j], L[i][j-1] R[i][j+1]) + grid[i][j]
     for i in range(1, n):
